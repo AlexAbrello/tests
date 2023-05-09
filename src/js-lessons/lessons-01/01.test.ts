@@ -1,4 +1,4 @@
-import {div, mult, sum} from "./01"
+import {div, mult, sub, sum} from "./01"
 
 
 let a: number
@@ -31,4 +31,8 @@ test('div should be correct', () => {
    const result1 = div(a, b)
 
    expect(result1).toBe(0.5)
+})
+
+test('sub should be correct', () => {
+   expect(sub(b, c)).toBe(-1)
 })
