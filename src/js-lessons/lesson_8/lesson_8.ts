@@ -101,7 +101,16 @@ export function sumFirstNumbers(N: number): number {
 
 
 export function getBanknoteList(amountOfMoney: number): Array<number> {
-  //...здесь пишем код.
-  // В return стоит "заглушка", чтоб typescript не ругался
-  return [1]
+  const banknotes = [1000, 500, 100, 50, 20, 10, 5, 2, 1]
+  let arr = []
+  let i = 0
+  while (amountOfMoney > 0) {
+    if (amountOfMoney >= banknotes[i]) {
+      arr.push(banknotes[i])
+      amountOfMoney = amountOfMoney - banknotes[i]
+    } else {
+      i++
+    }
+  }
+  return arr
 }
