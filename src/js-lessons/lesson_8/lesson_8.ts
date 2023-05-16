@@ -49,20 +49,20 @@ export function getSum(number: number): number {
 // суммы чисел с нечётными ИНДЕКСАМИ!!!, то функция возвращает true.
 // В противном случае - false.
 
-// export const isEvenIndexSumGreater = (arr: Array<number>): boolean => {
-//
-//   let evenSum = 0;
-//   let oddSum = 0;
-//
-//   for (let i = 0; i < arr.length; i++) {
-//     if (i % 2 === 0) {
-//       evenSum += arr[i]
-//     } else {
-//       oddSum += arr[i]
-//     }
-//   }
-//   return evenSum > oddSum
-// }
+export const isEvenIndexSumGreater = (arr: Array<number>): boolean => {
+
+  let evenSum = 0;
+  let oddSum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 === 0) {
+      evenSum += arr[i]
+    } else {
+      oddSum += arr[i]
+    }
+  }
+  return evenSum > oddSum
+}
 
 // 5. Функция getSquarePositiveIntegers принимает параметром массив чисел и возвращает новый массив. 
 // Новый массив состоит из квадратов целых положительных чисел, котрые являются элементами исходгого массива.
