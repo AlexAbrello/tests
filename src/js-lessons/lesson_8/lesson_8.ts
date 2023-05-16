@@ -39,9 +39,9 @@ export function getTriangleType(a: number, b: number, c: number): string {
 // 3. Функция getSum принимает параметром целое число и возвращает
 // сумму цифр этого числа
 
-// export function getSum(number: number): number {
-//   return number.toString().split('').map(Number).reduce((acc, el) => acc + el)
-// }
+export function getSum(number: number): number {
+  return number.toString().split('').map(Number).reduce((acc, el) => acc + el)
+}
 
 
 // 4. Функция isEvenIndexSumGreater принимает  параметром массив чисел.
