@@ -69,11 +69,12 @@ export const isEvenIndexSumGreater = (arr: Array<number>): boolean => {
 // Исходный массив не мутирует.
 
 
-// export function getSquarePositiveIntegers(array: Array<number>): Array<number> {
-//   //...здесь пишем код.
-//   // В return стоит "заглушка", чтоб typescript не ругался
-//   return array.filter(el => el > 0 && el % 1 === 0).map(el => el * el)
-// }
+export function getSquarePositiveIntegers(array: Array<number>): Array<number> {
+  //...здесь пишем код.
+  // В return стоит "заглушка", чтоб typescript не ругался
+  const copeArr = [...array]
+  return copeArr.filter(el => el > 0 && el % 1 === 0).map(el => el * el)
+}
 
 // 6. Функция принимает параметром целое не отрицательное число N и возвращает сумму всех чисел от 0 до N включительно
 // Попробуйте реализовать функцию без использования перебирающих методов.
