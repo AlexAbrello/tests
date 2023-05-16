@@ -79,15 +79,15 @@ export function getSquarePositiveIntegers(array: Array<number>): Array<number> {
 // 6. Функция принимает параметром целое не отрицательное число N и возвращает сумму всех чисел от 0 до N включительно
 // Попробуйте реализовать функцию без использования перебирающих методов.
 
-export function sumFirstNumbers(N: number): number {
-  let sum = 0
-  for (let i = 0; i <= N; i++) {
-    sum += i
-  }
-  //...здесь пишем код.
-  // В return стоит "заглушка", чтоб typescript не ругался
-  return sum
-}
+// export function sumFirstNumbers(N: number): number {
+//   let sum = 0
+//   for (let i = 0; i <= N; i++) {
+//     sum += i
+//   }
+//   //...здесь пишем код.
+//   // В return стоит "заглушка", чтоб typescript не ругался
+//   return sum
+// }
 
 // ...и "лапку" вверх!!!!
 
